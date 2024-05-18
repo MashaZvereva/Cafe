@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@android:drawable/editbox_dropdown_light_frame" />
+    <foreground android:drawable="@drawable/__2024_03_18_023854" />
+    <monochrome android:drawable="@drawable/__2024_03_18_023854" />
+</adaptive-icon>

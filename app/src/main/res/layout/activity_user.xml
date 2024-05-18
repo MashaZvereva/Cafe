@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User">
+
+
+    <ImageView
+        android:id="@+id/blackSquare"
+        style="@style/Style_image_1"
+        android:layout_width="450dp"
+        android:layout_height="@dimen/size_100"
+        android:background="@color/color1"
+        app:layout_constraintHorizontal_bias="0.540"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/blackSquare1"
+        style="@style/Style_image_1"
+        android:layout_width="450dp"
+        android:layout_height="@dimen/size_100"
+        android:background="@color/color2"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/greySquare"
+        style="@style/Style_image_1"
+        android:background="@color/color3"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <ImageView
+        android:id="@+id/greySquare4"
+        style="@style/Style_image_1"
+        android:background="@color/color3"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        style="@style/Style_image_2"
+        app:layout_constraintHorizontal_bias="0.380"
+        app:srcCompat="@drawable/sticker4" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        style="@style/Style_image_2"
+        app:layout_constraintHorizontal_bias="0.130"
+        app:srcCompat="@drawable/sticker7" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        style="@style/Style_image_2"
+        app:layout_constraintHorizontal_bias="0.630"
+        app:srcCompat="@drawable/sticker6" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        style="@style/Style_image_2"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:srcCompat="@drawable/sticker5" />
+
+    <TextView
+        android:id="@+id/textView_lk"
+        style="@style/Style_text_1"
+        android:layout_width="207dp"
+        android:layout_height="46dp"
+        android:text="@string/title_lk"
+        android:textSize="@dimen/size_16"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/textView_vhod"
+        style="@style/Style_text_1"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:text="@string/title_vhod"
+        android:textSize="@dimen/size_16"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/textView_reg"
+        style="@style/Style_text_1"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:text="@string/title_reg"
+        android:textSize="@dimen/size_16"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <Button
+        android:id="@+id/user_button"
+        style="@style/Style_button_1"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <Button
+        android:id="@+id/basket_button"
+        style="@style/Style_button_1"
+        app:layout_constraintHorizontal_bias="0.630" />
+
+    <Button
+        android:id="@+id/menu_button"
+        style="@style/Style_button_1"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Button
+        android:id="@+id/location_button"
+        style="@style/Style_button_1"
+        app:layout_constraintHorizontal_bias="0.140" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
