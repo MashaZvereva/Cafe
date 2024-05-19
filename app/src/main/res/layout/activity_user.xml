@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".User">
 
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="229dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="77dp"
+        android:text="   Добро Пожаловать!"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/logout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackSquare1" />
 
     <ImageView
         android:id="@+id/blackSquare"
@@ -25,20 +38,6 @@
         android:background="@color/color2"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/greySquare"
-        style="@style/Style_image_1"
-        android:background="@color/color3"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintVertical_bias="0.169" />
-
-    <ImageView
-        android:id="@+id/greySquare4"
-        style="@style/Style_image_1"
-        android:background="@color/color3"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintVertical_bias="0.277" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -74,25 +73,6 @@
         app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintVertical_bias="0.045" />
 
-    <TextView
-        android:id="@+id/textView_vhod"
-        style="@style/Style_text_1"
-        android:layout_width="88dp"
-        android:layout_height="39dp"
-        android:text="@string/title_vhod"
-        android:textSize="@dimen/size_16"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintVertical_bias="0.177" />
-
-    <TextView
-        android:id="@+id/textView_reg"
-        style="@style/Style_text_1"
-        android:layout_width="226dp"
-        android:layout_height="45dp"
-        android:text="@string/title_reg"
-        android:textSize="@dimen/size_16"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintVertical_bias="0.282" />
 
     <Button
         android:id="@+id/user_button"
@@ -115,5 +95,71 @@
         android:id="@+id/location_button"
         style="@style/Style_button_1"
         app:layout_constraintHorizontal_bias="0.140" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="27dp"
+        android:hint="  Почта"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackSquare1" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:hint="  Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/actionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="204dp"
+        android:text="Вход"
+        app:layout_constraintBottom_toBottomOf="@+id/switchTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackSquare1"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/switchTextView"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="172dp"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="У Вас нет аккаунта? Зарегистрируйтесь"
+        app:layout_constraintBottom_toTopOf="@+id/blackSquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="170dp"
+        android:text="Выход"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/blackSquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackSquare1"
+        app:layout_constraintVertical_bias="0.087" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

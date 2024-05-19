@@ -5,14 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF0E0"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/imageView1"
         style="@style/Style_image_1"
-        android:layout_width="412dp"
-        android:layout_height="219dp"
+        android:layout_width="248dp"
+        android:layout_height="139dp"
         android:scaleType="centerCrop"
         android:src="@drawable/_ec19138bf7084ea4da960de1a5f8950"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,11 +22,11 @@
     <ImageView
         android:id="@+id/blackSquare2"
         style="@style/Style_image_1"
-        android:layout_width="422dp"
-        android:layout_height="161dp"
+        android:layout_width="165dp"
+        android:layout_height="142dp"
         android:background="@color/color1"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintVertical_bias="0.485" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.12" />
 
     <ImageView
         android:id="@+id/blackSquare"
@@ -36,66 +37,41 @@
         app:layout_constraintHorizontal_bias="0.540"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/whiteSquare4"
-        style="@style/Style_image_1"
-        android:layout_width="182dp"
-        android:layout_height="74dp"
-        android:background="@color/white"
-        app:layout_constraintHorizontal_bias="0.781"
-        app:layout_constraintVertical_bias="0.479" />
 
     <Button
         android:id="@+id/menu_button2"
         style="@style/Style_button_1"
-        android:layout_width="416dp"
-        android:layout_height="116dp"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.723" />
-
-    <Button
-        android:id="@+id/menu_button6"
-        style="@style/Style_button_1"
-        android:layout_width="408dp"
-        android:layout_height="69dp"
+        android:layout_width="191dp"
+        android:layout_height="53dp"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="0.843" />
+        app:layout_constraintVertical_bias="0.346" />
 
     <ImageView
         android:id="@+id/whiteSquare1"
         style="@style/Style_image_1"
-        android:layout_width="414dp"
-        android:layout_height="113dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
         android:background="@color/color2"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintVertical_bias="0.708" />
-
-    <ImageView
-        android:id="@+id/whiteSquare7"
-        style="@style/Style_image_1"
-        android:layout_width="409dp"
-        android:layout_height="75dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.344" />
 
     <ImageView
         android:id="@+id/whiteSquare3"
         style="@style/Style_image_1"
-        android:layout_width="@dimen/size_80"
-        android:layout_height="150dp"
+        android:layout_width="81dp"
+        android:layout_height="140dp"
         android:background="@color/white"
-        app:layout_constraintHorizontal_bias="0.848"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintVertical_bias="0.121" />
 
     <TextView
         android:id="@+id/textView2"
         style="@style/Style_text_1"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:text="@string/title_num"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:text="карта"
         android:textSize="@dimen/size_16"
-        app:layout_constraintHorizontal_bias="0.831"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintVertical_bias="0.135" />
 
     <TextView
         android:id="@+id/textView_menu"
@@ -104,44 +80,37 @@
         android:layout_height="32dp"
         android:text="@string/title_menu"
         android:textSize="@dimen/size_20"
-        app:layout_constraintHorizontal_bias="0.606"
-        app:layout_constraintVertical_bias="0.69" />
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintVertical_bias="0.349" />
 
-    <TextView
-        android:id="@+id/textView_1"
-        style="@style/Style_text_1"
-        android:layout_width="113dp"
-        android:layout_height="26dp"
-        android:text="Рецепты"
-        android:textSize="20dp"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintVertical_bias="0.828" />
 
     <TextView
         android:id="@+id/textView3"
         style="@style/Style_text_1"
-        android:layout_width="174dp"
-        android:layout_height="38dp"
+        android:layout_width="126dp"
+        android:layout_height="29dp"
         android:text="@string/title_podarok"
-        android:textSize="@dimen/size_20"
-        app:layout_constraintHorizontal_bias="0.805"
-        app:layout_constraintVertical_bias="0.47" />
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintVertical_bias="0.245" />
 
     <TextView
         android:id="@+id/textView5"
         style="@style/Style_text_1"
-        android:text="@string/title_podarok2"
+        android:text="подарки"
+        android:textColor="@color/white"
         android:textSize="@dimen/size_16"
-        app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintVertical_bias="0.495" />
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintVertical_bias="0.169" />
 
     <TextView
         android:id="@+id/textView4"
         style="@style/Style_text_1"
         android:text="@string/title_bonus"
         android:textSize="@dimen/size_16"
-        app:layout_constraintHorizontal_bias="0.836"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintVertical_bias="0.233" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -170,10 +139,10 @@
     <ImageView
         android:id="@+id/imageView2"
         style="@style/Style_image_1"
-        android:layout_width="83dp"
-        android:layout_height="111dp"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintVertical_bias="0.508"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintVertical_bias="0.14"
         app:srcCompat="@drawable/sticker8" />
 
     <Button
@@ -199,19 +168,87 @@
         style="@style/Style_button_1"
         app:layout_constraintHorizontal_bias="0.140" />
 
-    <ImageView
-        android:id="@+id/whiteSquare0"
-        style="@style/Style_image_1"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/call_text"
+        style="@style/Style_text_1"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="Телефон для связи: +79150667080"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_16"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintVertical_bias="0.023" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/themeSwitcher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="61dp"
+        android:layout_height="33dp"
         android:layout_gravity="start"
         android:layout_marginHorizontal="60dp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="7dp" />
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="151dp"
+        android:shadowColor="@color/color4"
+        app:layout_constraintBottom_toBottomOf="@+id/blackSquare2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/call_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/whiteSquare4"
+        style="@style/Style_image_1"
+        android:layout_width="207dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <Button
+        android:id="@+id/menu_button6"
+        style="@style/Style_button_1"
+        android:layout_width="197dp"
+        android:layout_height="44dp"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <TextView
+        android:id="@+id/textView_1"
+        style="@style/Style_text_1"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="36dp"
+        android:text="Рецепты"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <ScrollView
+        android:layout_width="366dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/blackSquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/whiteSquare4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_text"
+            style="@style/Style_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:scrollbars="vertical"
+            android:text="Добро пожаловать в «Пекарню»!\n\nНаше заведение — это не просто место, где можно купить свежий хлеб и выпечку, а настоящее царство вкусов и ароматов. «Пекарня» гордится своим профессиональным коллективом, состоящим из опытных пекарей и кондитеров, каждый из которых — настоящий мастер своего дела.\n\nПрофессионализм сотрудников\nНаши сотрудники проходят тщательный отбор и регулярное обучение, что позволяет им совершенствовать свои навыки и использовать самые передовые технологии и методы выпечки. Это гарантирует, что каждый продукт, выходящий из наших печей, отвечает самым высоким стандартам качества и вкуса.\n\nУникальность «Пекарни»\nМы стремимся сохранить традиционные рецепты и методы выпечки, сочетая их с инновационными подходами. \nВ нашей продукции вы найдете как классические виды хлеба и выпечки, так и уникальные авторские рецепты, разработанные нашими пекарями. Мы используем только натуральные ингредиенты, чтобы обеспечить свежесть и пользу каждого изделия.\n\nПреимущества «Пекарни»\nСвежесть и качество: Вся наша продукция выпекается ежедневно, поэтому вы всегда можете рассчитывать на свежий хлеб и выпечку.\nШирокий ассортимент: У нас вы найдете хлеба из различных сортов муки, вкусные пироги, булочки и кондитерские изделия, которые удовлетворят любой вкус.\nЗабота о клиентах: Мы всегда готовы учесть ваши пожелания и предложить продукцию, соответствующую вашим потребностям и предпочтениям.\nПриятная атмосфера: «Пекарня» — это место, где всегда уютно и тепло, где вас всегда встретят с улыбкой и предложат только лучшее.\n\nПриходите к нам, чтобы насладиться истинным вкусом и качеством нашей выпечки. Мы уверены, что «Пекарня» станет вашим любимым местом для приобретения свежего хлеба и кондитерских изделий!\n\nДобро пожаловать в мир вкусов, где каждый кусочек — это радость!"
+            android:textSize="20dp" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

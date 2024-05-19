@@ -7,19 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Basket">
 
-    <ImageView
-        android:id="@+id/greySquare"
-        style="@style/Style_image_1"
-        android:background="@color/color3"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintVertical_bias="0.169" />
-
-    <ImageView
-        android:id="@+id/greySquare4"
-        style="@style/Style_image_1"
-        android:background="@color/color3"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintVertical_bias="0.277" />
 
     <ImageView
         android:id="@+id/blackSquare1"
@@ -64,34 +51,14 @@
         app:srcCompat="@drawable/sticker5" />
 
     <TextView
-        android:id="@+id/textView_lk"
+        android:id="@+id/textView_basket"
         style="@style/Style_text_1"
-        android:layout_width="207dp"
-        android:layout_height="46dp"
-        android:text="@string/title_lk"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:text="Корзина"
         android:textSize="@dimen/size_16"
         app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintVertical_bias="0.045" />
-
-    <TextView
-        android:id="@+id/textView_vhod"
-        style="@style/Style_text_1"
-        android:layout_width="88dp"
-        android:layout_height="39dp"
-        android:text="@string/title_vhod"
-        android:textSize="@dimen/size_16"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintVertical_bias="0.177" />
-
-    <TextView
-        android:id="@+id/textView_reg"
-        style="@style/Style_text_1"
-        android:layout_width="226dp"
-        android:layout_height="45dp"
-        android:text="@string/title_reg"
-        android:textSize="@dimen/size_16"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintVertical_bias="0.282" />
 
     <Button
         android:id="@+id/user_button"

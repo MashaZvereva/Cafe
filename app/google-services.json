@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622661131293",
+    "project_id": "cafe-dd102",
+    "storage_bucket": "cafe-dd102.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622661131293:android:9869a49b3e757df0077af4",
+        "android_client_info": {
+          "package_name": "com.example.cafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyTEHX6UDwcp-d2Q3HBhtUg-MrFfT4QOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
