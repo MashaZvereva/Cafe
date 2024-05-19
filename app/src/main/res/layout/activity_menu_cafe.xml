@@ -5,31 +5,30 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuCafe"
-    android:background="@color/color2" >
+    android:background="@color/color2"
+    tools:context=".MenuCafe">
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="@dimen/size_120"
         android:layout_height="@dimen/size_40"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/color1"
         android:text="@string/title_back"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
-        android:background="@color/color1" />
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText"
+        app:layout_constraintVertical_bias="0.009" />
 
     <EditText
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/backButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="1dp" />
 
     <Button
         android:id="@+id/clearButton"
@@ -37,13 +36,31 @@
         android:layout_height="@dimen/size_40"
         android:layout_below="@id/backButton"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
         android:background="@color/color1"
         android:text="@string/title_clean"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintEnd_toStartOf="@+id/backButton"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText"
+        app:layout_constraintVertical_bias="0.0" />
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="416dp"
+        android:layout_height="680dp"
+        android:layout_marginTop="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearButton"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/productsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

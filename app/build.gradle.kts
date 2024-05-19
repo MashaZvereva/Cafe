@@ -51,17 +51,28 @@ android {
     }
 
 }
-
 dependencies {
+    // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
-    implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    // RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 
-    implementation ("com.github.bumptech.glide:glide:4.12.0")
-    implementation(libs.firebase.firestore.ktx)
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
 
+    // Picasso
+    implementation("com.squareup.picasso:picasso:2.71828")
+
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -74,6 +85,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -81,8 +94,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
-    implementation("com.google.firebase:firebase-analytics")
-    implementation("com.google.firebase:firebase-auth")
 }

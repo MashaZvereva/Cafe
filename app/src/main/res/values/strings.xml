@@ -19,6 +19,7 @@
     <string name="title_clean">Очистить</string>
     <string name="title_vvod">Введите запрос</string>
     <string name="title_poisk">Поиск</string>
+    <string name="title_refresh">Обновить</string>
     <string name="title_title">Название продукта</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
