@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF0E0"
     tools:context=".User">
 
     <TextView
@@ -14,7 +13,6 @@
         android:layout_height="68dp"
         android:layout_marginTop="77dp"
         android:text="   Добро Пожаловать!"
-        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/logout_button"
@@ -67,8 +65,8 @@
     <TextView
         android:id="@+id/textView_lk"
         style="@style/Style_text_1"
-        android:layout_width="207dp"
-        android:layout_height="46dp"
+        android:layout_width="162dp"
+        android:layout_height="32dp"
         android:text="@string/title_lk"
         android:textSize="@dimen/size_16"
         app:layout_constraintHorizontal_bias="0.585"

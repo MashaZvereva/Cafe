@@ -96,7 +96,7 @@ class MenuCafe : AppCompatActivity() {
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(searchEditText.windowToken, 0)
     }
-
+    // Метод для загрузки продуктов из базы данных
     private fun fetchProducts() {
         db.collection("product")
             .addSnapshotListener { snapshots, e ->
@@ -114,7 +114,7 @@ class MenuCafe : AppCompatActivity() {
                 }
             }
     }
-
+    // Метод добавления продукта в макет
     private fun addProductToLayout(product: Product) {
         val productView = layoutInflater.inflate(R.layout.item_product, productsLayout, false)
 

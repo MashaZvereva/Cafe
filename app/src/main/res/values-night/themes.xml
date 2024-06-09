@@ -11,16 +11,13 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/color4</item>
         <item name="android:textColorPrimary">@color/white</item>
         <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/fon_dark</item> <!-- Цвет фона для темы -->
+    </style>
 
-    </style>
-    <style name="AppTheme.RecyclerViewText" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">@color/white</item> <!-- Цвет текста для темной темы -->
-    </style>
 
 
     <style name="Theme.Cafe" parent="Base.Theme.Cafe" />
-
 </resources>

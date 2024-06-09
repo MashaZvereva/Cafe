@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -29,13 +33,15 @@
         </activity>
 
         <activity
+            android:theme="@style/Theme.Cafe"
             android:name=".SearchActivity"
             android:exported="true">
         </activity>
 
         <activity
             android:name=".MenuCafe"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Cafe" />
 
         <activity
             android:name=".Location"
@@ -50,7 +56,8 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Cafe" >
         </activity>
     </application>
 </manifest>

@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF0E0"
     tools:context=".MainActivity">
 
 
@@ -42,7 +41,7 @@
         android:id="@+id/menu_button2"
         style="@style/Style_button_1"
         android:layout_width="194dp"
-        android:layout_height="46dp"
+        android:layout_height="44dp"
         app:layout_constraintHorizontal_bias="0.959"
         app:layout_constraintVertical_bias="0.317" />
 
@@ -161,7 +160,7 @@
         android:id="@+id/menu_button"
         style="@style/Style_button_1"
         app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="@dimen/size_097" />
 
     <Button
         android:id="@+id/location_button"
@@ -172,13 +171,12 @@
     <TextView
         android:id="@+id/call_text"
         style="@style/Style_text_1"
-        android:layout_width="302dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:clickable="true"
         android:focusable="true"
         android:padding="10dp"
         android:text="Телефон для связи: +79150667080"
-        android:textColor="@color/black"
         android:textSize="@dimen/size_16"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintVertical_bias="0.023" />
@@ -195,7 +193,6 @@
         android:shadowColor="@color/color4"
         app:layout_constraintBottom_toBottomOf="@+id/blackSquare2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -213,7 +210,7 @@
         android:id="@+id/menu_button6"
         style="@style/Style_button_1"
         android:layout_width="197dp"
-        android:layout_height="44dp"
+        android:layout_height="45dp"
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintVertical_bias="0.315" />
 
@@ -229,8 +226,9 @@
         app:layout_constraintVertical_bias="0.323" />
 
     <ScrollView
-        android:layout_width="392dp"
-        android:layout_height="408dp"
+        android:id="@+id/scrollView3"
+        android:layout_width="390dp"
+        android:layout_height="410dp"
         android:layout_marginTop="64dp"
         app:layout_constraintBottom_toBottomOf="@+id/blackSquare"
         app:layout_constraintEnd_toEndOf="parent"
